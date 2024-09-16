@@ -6,6 +6,9 @@ import { config } from './configs';
 const app = express();
 
 app.use('/', router);
+app.get('/', (req, res) => {
+  return res.json({ status: 'OK' })
+})
 
 const PORT = process.env.PORT || 1337;
 
