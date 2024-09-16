@@ -48,7 +48,7 @@ const handleMessage = async (sender_psid: string, received_message: string) => {
       `conversation:${sender_psid}`,
       JSON.stringify(userConversations),
       'EX',
-      60 * 60 * 24 * 15, // 15 days
+      60 * 60 * 24 * 15, // 15 days 
     );
 
     // ส่งการตอบกลับไปยังผู้ใช้
