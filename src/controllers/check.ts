@@ -11,7 +11,7 @@ export const check = async (req: Request, res: Response) => {
 
     // แสดงผลค่าที่อ่านได้
     console.log(`Value of key 'check': ${value}`);
-    
+
     // เขียนค่า current timestamp ไปยัง Redis ที่ key 'check'
     await redisClient.set('check', timestamp);
 
