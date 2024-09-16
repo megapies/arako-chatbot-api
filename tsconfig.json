@@ -2,13 +2,13 @@
   "compilerOptions": {
     "target": "ES2017",
     "module": "commonjs",
-    "rootDir": "./src",
+    "rootDir": "api",
     "outDir": "./dist",
     "esModuleInterop": true,
     "strict": true,
     "resolveJsonModule": true,
     "skipLibCheck": true
   },
-  "include": ["src/**/*"],
+  "include": ["api/**/*"],
   "exclude": ["node_modules"]
 }
